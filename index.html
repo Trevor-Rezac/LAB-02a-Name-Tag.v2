@@ -10,14 +10,20 @@
 <body>
 
     <br>
-    <section class="container">
-        <main class="red-top">
+    <main class="container" id="red-tag">
+        <section class="red-top" >
             <h2 class="greeting">HELLO</h2>
             <p class="greeting">my name  is</p>
-        </main>
-        <div class="name-tag">Trevor Rezac</div>
-        <div class="red-bottom"></div>
-    </section>
+        </section>
+        <div class="name-tag" id="name-tag">Trevor Rezac</div>
+        <div class="red-bottom" id="red-tag"></div>
+    </main>
+    <br>
 
+    <input type="text" placeholder="Enter your name here" id="name-input">
+
+    <button id="update-button">Update Name</button>
+
+    <script type="module" src="./app.js"></script>
 </body>
 </html>
