@@ -12,14 +12,17 @@ const blueButton = document.getElementById('blue')
 // console.log(blueButton)
 const greenButton = document.getElementById('lightgreen')
 const orangeButton = document.getElementById('orange')
+const redButton = document.getElementById('red')
 
 const userPronouns = document.getElementById('pronouns')
 // console.log(userPronouns)
 
 updateButton.addEventListener('click', () => {
     const newName = nameInput.value;
-    nameTag.textContent = newName;
-    nameInput.value = ''
+    const newPronouns = userPronouns.value;
+    nameTag.textContent = `${newName} ${newPronouns}`;
+    nameInput.value = '';
+
 });
 
 nameInput.addEventListener('keyup',
@@ -27,7 +30,8 @@ nameInput.addEventListener('keyup',
         if (event.keyCode === 13) {
             event.preventDefault();
             const newName = nameInput.value;
-            nameTag.textContent = newName;
+            const newPronouns = userPronouns.value;
+            nameTag.textContent = `${newName} ${newPronouns}`;
             nameInput.value = ''
         }
     }
@@ -48,7 +52,10 @@ orangeButton.addEventListener('click', () => {
     tagColorBottom.style.backgroundColor = 'orange';
 })
 
-
+redButton.addEventListener('click', () => {
+    tagColorTop.style.backgroundColor = 'red';
+    tagColorBottom.style.backgroundColor = 'red';
+})
 
 
 
