@@ -20,14 +20,26 @@
     </main>
     <br>
 
-    <input type="text" placeholder="Enter your name here" id="name-input">
+    <section class="update-section">
+        <!-- name input and button section -->
+        <input type="text" placeholder="Enter your name here" id="name-input">
 
-    <button id="update-button">Update Name</button>
-    <br>
-    <br>
-    <button id='blue' title="Click to change colors!">Blue</button>
-    <button id='lightgreen' title="Click to change colors!">Green</button>
-    <button id="orange" title="Click to change colors!">Orange</button>
+        <button id="update-button">Update Name</button>
+        <br>
+        <!-- pronouns section -->
+        <label for="Pronouns">Select your pronouns!</label>
+            <select name="Prounouns" id="pronouns">
+                <option value="he/him">He/Him</option>
+                <option value="she/her">She/Her</option>
+                <option value="they/them">They/Them</option>
+                <option value="other preference">Other</option>
+            </select>
+        <!-- color button section -->
+        <br>
+        <button id='blue' title="Click to change colors!">Blue</button>
+        <button id='lightgreen' title="Click to change colors!">Green</button>
+        <button id="orange" title="Click to change colors!">Orange</button>
+    </section>
 
     <script type="module" src="./app.js"></script>
 </body>

@@ -66,4 +66,13 @@ h2 {
 p {
     font-size: 2rem;
     color:
+};
+
+.update-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
+
+

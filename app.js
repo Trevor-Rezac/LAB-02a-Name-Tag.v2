@@ -13,6 +13,8 @@ const blueButton = document.getElementById('blue')
 const greenButton = document.getElementById('lightgreen')
 const orangeButton = document.getElementById('orange')
 
+const userPronouns = document.getElementById('pronouns')
+// console.log(userPronouns)
 
 updateButton.addEventListener('click', () => {
     const newName = nameInput.value;
@@ -37,8 +39,8 @@ blueButton.addEventListener('click', () => {
 });
 
 greenButton.addEventListener('click', () => {
-    tagColorTop.style.backgroundColor = 'lightgreen';
-    tagColorBottom.style.backgroundColor = 'lightgreen';
+    tagColorTop.style.backgroundColor = 'green';
+    tagColorBottom.style.backgroundColor = 'green';
 })
 
 orangeButton.addEventListener('click', () => {
