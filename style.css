@@ -3,6 +3,7 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: bisque;
 }
 
 * {
@@ -64,4 +65,5 @@ h2 {
 
 p {
     font-size: 2rem;
+    color:
 }

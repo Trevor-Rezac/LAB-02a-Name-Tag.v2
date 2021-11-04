@@ -5,6 +5,15 @@ const updateButton = document.getElementById('update-button')
 const nameTag = document.getElementById('name-tag')
 // console.log(nameTag)
 
+const tagColorTop = document.getElementById("red-tag-top")
+// console.log(tagColorTop)
+const tagColorBottom = document.getElementById('red-tag-bottom')
+const blueButton = document.getElementById('blue')
+// console.log(blueButton)
+const greenButton = document.getElementById('lightgreen')
+const orangeButton = document.getElementById('orange')
+
+
 updateButton.addEventListener('click', () => {
     const newName = nameInput.value;
     nameTag.textContent = newName;
@@ -22,7 +31,20 @@ nameInput.addEventListener('keyup',
     }
 );
 
+blueButton.addEventListener('click', () => {
+    tagColorTop.style.backgroundColor = 'blue';
+    tagColorBottom.style.backgroundColor = 'blue';
+});
 
+greenButton.addEventListener('click', () => {
+    tagColorTop.style.backgroundColor = 'lightgreen';
+    tagColorBottom.style.backgroundColor = 'lightgreen';
+})
+
+orangeButton.addEventListener('click', () => {
+    tagColorTop.style.backgroundColor = 'orange';
+    tagColorBottom.style.backgroundColor = 'orange';
+})
 
 
 
