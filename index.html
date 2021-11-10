@@ -8,21 +8,21 @@
     <title>Name Tag.v2</title>
 </head>
 <body>
-
-    <br>
-    <main class="container">
-        <section class="red-top" id="red-tag-top">
-            <h2 class="greeting">HELLO</h2>
-            <p class="greeting">my name  is</p>
+    <main>
+        <br>
+        <section class="container">
+            <div class="red-top" id="red-tag-top">
+                <h2 class="greeting">HELLO</h2>
+                <p class="greeting">my name  is</p>
+            </div>
+            <div class="name-tag" id="name-tag">Trevor Rezac</div>
+            <div class="red-bottom" id="red-tag-bottom"></div>
         </section>
-        <div class="name-tag" id="name-tag">Trevor Rezac</div>
-        <div class="red-bottom" id="red-tag-bottom"></div>
-    </main>
-    <br>
+        <br>
 
-    <section class="update-section">
+        <section class="update-section">
         <!-- pronouns section -->
-        <label for="Pronouns" class="pronoun-section">Select your pronouns:</label>
+            <label for="Pronouns" class="pronoun-section">Select your pronouns:</label>
             <select name="Prounouns" id="pronouns">
                 <option value="(he/him)">He/Him</option>
                 <option value="(she/her)">She/Her</option>
@@ -33,19 +33,22 @@
             <br>
             <br>
         <!-- name input and button section -->
-        <input type="text" placeholder="Enter your name here" id="name-input">
+            <input type="text" placeholder="Enter your name here" id="name-input">
 
-        <button id="update-button">Update Name</button>
-        <br>
+            <button class="button" id="update-button">Update Name</button>
+            <br>
         
         <!-- color button section -->
-        <br>
-        <button id='blue' title="Click to change colors!">Blue</button>
-        <button id='lightgreen' title="Click to change colors!">Green</button>
-        <button id="orange" title="Click to change colors!">Orange</button>
-        <button id="red" title="Click to change colors!">Red</button>
-    </section>
-
+            <br>
+            <button class="button" id='blue' title="Click to change colors!">Blue</button>
+            <button class="button" id='lightgreen' title="Click to change colors!">Green</button>
+            <button class="button" id="orange" title="Click to change colors!">Orange</button>
+            <button class="button" id="red" title="Click to change colors!">Red</button>
+            <br>
+            <button class="crazy-button button" id="crazy-button">Go Crazy!</button>
+        </section>
+    
+    </main>
     <script type="module" src="./app.js"></script>
 </body>
 </html>

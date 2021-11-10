@@ -65,14 +65,17 @@ h2 {
 
 p {
     font-size: 2rem;
-    color:
-};
-
-.update-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
 }
 
+.button:hover {
+    cursor: pointer;
+}
 
+.crazy-button {
+    margin: 5px;
+    transition: 1s ease-in-out;
+}
+
+.crazy-button:hover {
+    transform: rotate(360deg);
+}
